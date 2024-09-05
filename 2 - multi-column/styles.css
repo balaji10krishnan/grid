@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
+
+body {
+  margin: 20px;
+  font-family: "Poppins";
+  background: #d1dedd;
+}
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3 {
+  color: #767f7e;
+}
+p {
+  color: #828b8a;
+}
+img {
+  width: 100%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.main {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 20px;
+}
+.header {
+  border-bottom: 1px solid #767f7e;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding-block: 40px;
+  border-bottom: 1px solid #767f7e;
+}
+.travel-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding-block: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .travel-list {
+    grid-template-columns: 1fr;
+  }
+  .travel-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .travel-item {
+    grid-template-columns: 1fr;
+  }
+}
